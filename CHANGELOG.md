@@ -17,6 +17,10 @@
   - `pdata.AttributeValueType...` constants are deprecated in favor of `pdata.ValueType...`
   - `pdata.NewAttributeValue...` funcs are deprecated in favor of `pdata.NewValue...`
 
+### 💡 Enhancements 💡
+
+- Create additional pdata packages separated by type for further split of pdata (#4918)
+
 ## v0.47.0 Beta
 
 ### 🛑 Breaking changes 🛑
