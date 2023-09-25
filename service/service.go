@@ -180,7 +180,7 @@ func (srv *Service) Shutdown(ctx context.Context) error {
 
 	// Begin shutdown sequence.
 	if srv.telemetrySettings.Logger == nil {
-		return fmt.Errorf("no logger has been initialised")
+		return fmt.Errorf("no logger has been initialized")
 	}
 	srv.telemetrySettings.Logger.Info("Starting shutdown...")
 
