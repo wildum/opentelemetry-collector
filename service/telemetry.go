@@ -124,7 +124,7 @@ func (tel *telemetryInitializer) initMetrics(res *resource.Resource, logger *zap
 
 	if useExternalMetricsServer {
 		if len(cfg.Metrics.Address) != 0 || len(cfg.Metrics.Readers) != 0 {
-			logger.Sugar().Infof(
+			logger.Sugar().Debugf(
 				"Using an external metrics server - Prometheus metrics may not be served on %q or %q", cfg.Metrics.Address, cfg.Metrics.Readers,
 			)
 		}
